@@ -38,7 +38,7 @@ export default function Navigation(props) {
 
         <div className="nav-left">
           <Link to={auth ? '/home' : '/'} className="nav-item">
-            <h3 className="title is-3 logo">MERN Boilerplate</h3>
+            <h3 className="title is-3 logo">Social Connect</h3>
           </Link>
           {auth &&
             <Link to="/home" className={homeItemClasses}>
