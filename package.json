@@ -11,7 +11,8 @@
     "prod": "npm run build && npm run start",
     "start": "nodemon server/index.js",
     "test": "./scripts/test",
-    "test:verbose": "./scripts/test-verbose"
+    "test:verbose": "./scripts/test-verbose",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix  && npm run build -- client"
   },
   "repository": {
     "type": "git",
